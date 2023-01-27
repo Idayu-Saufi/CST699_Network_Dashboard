@@ -96,7 +96,7 @@ if uploaded_file:
                  names=groupby_column,
                  values='Total_AP',
                  title="<b>AP Pie Chart",
-                 template="plotly_white"
+                 template="plotly_dark"
     )
     #st.plotly_chart(fig_pie)
 
@@ -110,7 +110,7 @@ if uploaded_file:
         df_grouped,
         x=groupby_column,
         y='Total_AP',
-        template='plotly_white',
+        template='plotly_dark',
         title=f'<b>Network Line Chart by {groupby_column}</b>'
     )
 
