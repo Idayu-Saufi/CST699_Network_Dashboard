@@ -80,6 +80,7 @@ if uploaded_file:
     st.markdown("##")
     
     #PLOT DATAFRAME
+    #BAR CHART
     fig_bar = px.bar(
         df_grouped,
         x=groupby_column,
@@ -114,7 +115,7 @@ if uploaded_file:
         title=f'<b>Network Line Chart by {groupby_column}</b>'
     )
 
-    #LINE CHART
+    #DONUT-LIKE PIE CHART
     fig_donut = px.pie(
         df_grouped,
         names=groupby_column,
